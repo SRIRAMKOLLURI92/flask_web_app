@@ -45,3 +45,14 @@ def final():
         year=datetime.now().year,
         message='Your final page.'
     )
+
+
+@app.route('/final')
+def devops():
+    """Renders the final page."""
+    return render_template(
+        'final.html',
+        title='Final',
+        year=datetime.now().year,
+        message='My name is SRIRAMKOLLURI - 02-12-2025 '
+    )
